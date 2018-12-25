@@ -1,4 +1,5 @@
 <div>
-  <a href="#">Home</a>
-  <a href="#">About</a>
+  {% for link in site.data.nav %}
+    <a href="{{ link.url }}">{{ link.name }}</a>
+  {% endfor %}
 </div>
